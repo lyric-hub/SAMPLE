@@ -11,7 +11,7 @@ def PatientEmbedingsIndex(patient_embeddings):
     index.add(patient_embeddings)
     return index
 def PatientSearch(query,index,num_preferences=3,patients=patients):
-    query = "Elderly diabetic patient with kidney complications"
+    query=query
     query_embedding = normalize(GetEmbedding(query, MODEL, TOKENIZER).reshape(1, -1))
     num_preferences = 3  # top-k similar patients
     _, indices = index.search(query_embedding, num_preferences)
