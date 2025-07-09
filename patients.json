@@ -1,0 +1,22 @@
+[
+  {
+    "id": "P001",
+    "text": "Patient with hypertension and chronic kidney disease."
+  },
+  {
+    "id": "P002",
+    "text": "Elderly male with type 2 diabetes and nephropathy."
+  },
+  {
+    "id": "P003",
+    "text": "Teenager with type 1 diabetes and no renal involvement."
+  },
+  {
+    "id": "P004",
+    "text": "Woman with asthma and mild COPD."
+  },
+  {
+    "id": "P005",
+    "text": "Man with history of heart attack and chest pain."
+  }
+]
