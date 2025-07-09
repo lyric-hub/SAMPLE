@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h2>Results for: "{{ query }}"</h2>
+
+    {% if results %}
+        <ul>
+            {% for id, data in results.items() %}
+                <li><b>{{ id }}</b>: {{ data }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching patients found.</p>
+    {% endif %}
+
+    <a href="/">Search Again</a>
+</body>
+</html>
