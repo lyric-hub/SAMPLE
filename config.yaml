@@ -1,0 +1,4 @@
+model:
+  name: emilyalsentzer/Bio_ClinicalBERT
+  trust_remote_code: false
+  use_auth_token: false
