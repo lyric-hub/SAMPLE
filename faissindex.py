@@ -17,5 +17,5 @@ def PatientSearch(query,index,num_preferences=3,patients=patients):
     _, indices = index.search(query_embedding, num_preferences)
     similar_patient_id={}
     for _, idx in enumerate(indices[0]):
-        similar_patient_id[int(idx)]=patients[idx]
+        similar_patient_id[next(p['id'] for  p in patient_data if p['text'] == patients[idx])] = patients[idx]
     return similar_patient_id
